@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unelma Inventory Program</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="/scripts/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css"
+        integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-secondary">
+
+    <div class="justify-content-center text-center">
+        <h1>Unelma Inventory</h1>
+        <h2>Avenues Mall</h2>
+    </div>
+    <!--The following is the basic bootstrap form in which information will be entered-->
+    <div class="container justify-content-center text-center">
+        <div class="row">
+            <div class="col-12">
+                <h3>Pillows</h3>
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="queenABCLabel">ABC Queen</span>
+                                </div>
+                                <input id="queenABC" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen ABC" aria-describedby="queenABCLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kingABCLabel">ABC King</span>
+                                </div>
+                                <input id="kingABC" type="number" class="form-control" placeholder="King"
+                                    aria-label="King ABC" aria-describedby="kingABCLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="queenCervicalLabel">Cervical Queen</span>
+                                </div>
+                                <input id="queenCervical" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen Cervical" aria-describedby="queenCervicalLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kingCervicalLabel">Cervical King</span>
+                                </div>
+                                <input id="kingCervical" type="number" class="form-control" placeholder="King"
+                                    aria-label="King Cervical" aria-describedby="kingCervicalLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="moonLavenderLabel">Moon Lavender</span>
+                                </div>
+                                <input id="moonLavender" type="number" class="form-control" placeholder="Lavender"
+                                    aria-label="Moon Lavender" aria-describedby="moonLavenderLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="moonGelLabel">Moon Gel</span>
+                                </div>
+                                <input id="moonGel" type="number" class="form-control" placeholder="Gel"
+                                    aria-label="Moon Gel" aria-describedby="moonGelLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="infuseLavenderLabel">Infuse Lavender</span>
+                                </div>
+                                <input id="infuseLavender" type="number" class="form-control" placeholder="Lavender"
+                                    aria-label="Infuse Lavender" aria-describedby="infuseLavenderLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="infuseChamomileLabel">Infuse Chamomile</span>
+                                </div>
+                                <input id="infuseChamomile" type="number" class="form-control" placeholder="Chamomile"
+                                    aria-label="Infuse Chamomile" aria-describedby="infuseChamomileLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="neckLabel">Neck Pillows</span>
+                                </div>
+                                <input id="neck" type="number" class="form-control" placeholder="neck" aria-label="neck"
+                                    aria-describedby="neckLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="bolsterLabel">Bolster Pillows</span>
+                                </div>
+                                <input id="bolster" type="number" class="form-control" placeholder="Bolster"
+                                    aria-label="Bolster" aria-describedby="bolsterLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="lumbarLabel">Lumbar Pillows</span>
+                                </div>
+                                <input id="lumbar" type="number" class="form-control" placeholder="Lumbar"
+                                    aria-label="Lumbar" aria-describedby="lumbarLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <div>
+                    <h3>100% Sheets</h3>
+                </div>
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <h4 class="col-12">Split King</h4>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skWhiteLabel">SK White</span>
+                                </div>
+                                <input id="skWhite" type="number" class="form-control" placeholder="White"
+                                    aria-label="SK White" aria-describedby="skWhiteLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skIvoryLabel">SK Ivory</span>
+                                </div>
+                                <input id="skIvory" type="number" class="form-control" placeholder="Ivory"
+                                    aria-label="SK Ivory" aria-describedby="skIvoryLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skRainLabel">SK Rain</span>
+                                </div>
+                                <input id="skRain" type="number" class="form-control" placeholder="Rain"
+                                    aria-label="SK Rain" aria-describedby="skRainLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skAshLabel">SK Ash</span>
+                                </div>
+                                <input id="skAsh" type="number" class="form-control" placeholder="Ash"
+                                    aria-label="SK Ash" aria-describedby="skAshLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skDriftwoodLabel">SK Drift</span>
+                                </div>
+                                <input id="skdriftwood" type="number" class="form-control" placeholder="Driftwood"
+                                    aria-label="SK Driftwood" aria-describedby="skDriftwoodLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skCitronLabel">SK Citron</span>
+                                </div>
+                                <input id="skCitron" type="number" class="form-control" placeholder="Citron"
+                                    aria-label="SK Citron" aria-describedby="skCitronLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <h4 class="col-12">King</h4>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kWhiteLabel">K White</span>
+                                </div>
+                                <input id="kWhite" type="number" class="form-control" placeholder="White"
+                                    aria-label="K White" aria-describedby="kWhiteLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kIvoryLabel">K Ivory</span>
+                                </div>
+                                <input id="kIvory" type="number" class="form-control" placeholder="Ivory"
+                                    aria-label="K Ivory" aria-describedby="kIvoryLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kRainLabel">K Rain</span>
+                                </div>
+                                <input id="kRain" type="number" class="form-control" placeholder="Rain"
+                                    aria-label="K Rain" aria-describedby="kRainLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kAshLabel">K Ash</span>
+                                </div>
+                                <input id="kAsh" type="number" class="form-control" placeholder="Ash" aria-label="K Ash"
+                                    aria-describedby="kAshLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kDriftwoodLabel">K Drift</span>
+                                </div>
+                                <input id="kdriftwood" type="number" class="form-control" placeholder="Driftwood"
+                                    aria-label="K Driftwood" aria-describedby="kDriftwoodLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kCitronLabel">K Citron</span>
+                                </div>
+                                <input id="kCitron" type="number" class="form-control" placeholder="Citron"
+                                    aria-label="K Citron" aria-describedby="kCitronLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <h4 class="col-12">Queen</h4>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qWhiteLabel">Q White</span>
+                                </div>
+                                <input id="qWhite" type="number" class="form-control" placeholder="White"
+                                    aria-label="q White" aria-describedby="qWhiteLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qIvoryLabel">Q Ivory</span>
+                                </div>
+                                <input id="qIvory" type="number" class="form-control" placeholder="Ivory"
+                                    aria-label="q Ivory" aria-describedby="qIvoryLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qRainLabel">Q Rain</span>
+                                </div>
+                                <input id="qRain" type="text" class="form-control" placeholder="Rain"
+                                    aria-label="Q Rain" aria-describedby="qRainLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qAshLabel">Q Ash</span>
+                                </div>
+                                <input id="qAsh" type="number" class="form-control" placeholder="Ash" aria-label="Q Ash"
+                                    aria-describedby="qAshLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qDriftwoodLabel">Q Drift</span>
+                                </div>
+                                <input id="qdriftwood" type="number" class="form-control" placeholder="Driftwood"
+                                    aria-label="Q Driftwood" aria-describedby="qDriftwoodLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qCitronLabel">Q Citron</span>
+                                </div>
+                                <input id="qCitron" type="number" class="form-control" placeholder="Citron"
+                                    aria-label="Q Citron" aria-describedby="qCitronLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <h3>Pillowcases</h3>
+                </div>
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <h4 class="col-12">Queen</h4>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="QPWhiteLabel">Q White</span>
+                                </div>
+                                <input id="qpWhite" type="number" class="form-control" placeholder="White"
+                                    aria-label="QP White" aria-describedby="qpWhiteLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qpIvoryLabel">Q Ivory</span>
+                                </div>
+                                <input id="qpIvory" type="number" class="form-control" placeholder="Ivory"
+                                    aria-label="QP Ivory" aria-describedby="qpIvoryLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qpRainLabel">Q Rain</span>
+                                </div>
+                                <input id="qpRain" type="number" class="form-control" placeholder="Rain"
+                                    aria-label="QP Rain" aria-describedby="qpRainLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qpAshLabel">Q Ash</span>
+                                </div>
+                                <input id="qpAsh" type="number" class="form-control" placeholder="Ash"
+                                    aria-label="QP Ash" aria-describedby="qpAshLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qpDriftwoodLabel">Q Drift</span>
+                                </div>
+                                <input id="qpdriftwood" type="number" class="form-control" placeholder="Driftwood"
+                                    aria-label="QP Driftwood" aria-describedby="qpDriftwoodLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qpCitronLabel">Q Citron</span>
+                                </div>
+                                <input id="qpCitron" type="number" class="form-control" placeholder="Citron"
+                                    aria-label="QP Citron" aria-describedby="qpCitronLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <h4 class="col-12">King</h4>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kpWhiteLabel">K White</span>
+                                </div>
+                                <input id="kpWhite" type="number" class="form-control" placeholder="White"
+                                    aria-label="KP White" aria-describedby="kpWhiteLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kpIvoryLabel">K Ivory</span>
+                                </div>
+                                <input id="kpIvory" type="number" class="form-control" placeholder="Ivory"
+                                    aria-label="KP Ivory" aria-describedby="kpIvoryLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kpRainLabel">K Rain</span>
+                                </div>
+                                <input id="kpRain" type="number" class="form-control" placeholder="Rain"
+                                    aria-label="KP Rain" aria-describedby="kpRainLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kpAshLabel">K Ash</span>
+                                </div>
+                                <input id="kpAsh" type="number" class="form-control" placeholder="Ash"
+                                    aria-label="KP Ash" aria-describedby="kpAshLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kpDriftwoodLabel">K Drift</span>
+                                </div>
+                                <input id="kpdriftwood" type="number" class="form-control" placeholder="Driftwood"
+                                    aria-label="KP Driftwood" aria-describedby="kpDriftwoodLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kpCitronLabel">K Citron</span>
+                                </div>
+                                <input id="kpCitron" type="number" class="form-control" placeholder="Citron"
+                                    aria-label="KP Citron" aria-describedby="kpCitronLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!--This is the beginning of the Blend sheets section! Mind that you remember the document.getelementbyid functions here are annotated with the right size beginning notation!!!-->
+                <div>
+                    <h3>Blend Sheets</h3>
+                </div>
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="tblendLabel">Twin</span>
+                                </div>
+                                <input id="tBlend" type="number" class="form-control" placeholder="Twin"
+                                    aria-label="Twin Blend" aria-describedby="tBlendLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="fBlendLabel">Full</span>
+                                </div>
+                                <input id="fBlend" type="number" class="form-control" placeholder="Full"
+                                    aria-label="Full Blend" aria-describedby="fBlendLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qBlendLabel">Queen</span>
+                                </div>
+                                <input id="qBlend" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen Blend" aria-describedby="qBlendLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kBlendLabel">King</span>
+                                </div>
+                                <input id="kBlend" type="number" class="form-control" placeholder="King"
+                                    aria-label="King Blend" aria-describedby="kBlendLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skBlendLabel">Split king</span>
+                                </div>
+                                <input id="skBlend" type="number" class="form-control" placeholder="Split King"
+                                    aria-label="Split King Blend" aria-describedby="skBlendLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <h3>Microfiber Sheets</h3>
+                </div>
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="tMicroLabel">Twin</span>
+                                </div>
+                                <input id="tmicro" type="number" class="form-control" placeholder="Twin"
+                                    aria-label="Twin Microfiber" aria-describedby="tMicroLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="fMicroLabel">Full</span>
+                                </div>
+                                <input id="fmicro" type="number" class="form-control" placeholder="Full"
+                                    aria-label="Full Microfiber" aria-describedby="fMicroLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qMicroLabel">Queen</span>
+                                </div>
+                                <input id="qMicro" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen Microfiber" aria-describedby="qMicroLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kMicroLabel">King</span>
+                                </div>
+                                <input id="kMicro" type="number" class="form-control" placeholder="King"
+                                    aria-label="King Microfiber" aria-describedby="kMicroLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="skMicroLabel">Split king</span>
+                                </div>
+                                <input id="skMicro" type="number" class="form-control" placeholder="Split King"
+                                    aria-label="Split King Microfiber" aria-describedby="skMicroLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="ckMicroLabel">Cali king</span>
+                                </div>
+                                <input id="ckMicro" type="number" class="form-control" placeholder="Cali King"
+                                    aria-label="Cali King Microfiber" aria-describedby="ckMicroLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <h3>Misc Bedding</h3>
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qQuiltLabel">Queen Quilt</span>
+                                </div>
+                                <input id="qQuilt" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen Quilt" aria-describedby="qQuiltLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kQuiltLabel">King Quilt</span>
+                                </div>
+                                <input id="kQuiltABC" type="number" class="form-control" placeholder="King"
+                                    aria-label="King Quilt" aria-describedby="kQuiltLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qComforterLabel">Queen Comforter</span>
+                                </div>
+                                <input id="qcomforter" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen Comforter" aria-describedby="qComforterLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kComforterLabel">King Comforter</span>
+                                </div>
+                                <input id="kcomforter" type="number" class="form-control" placeholder="King"
+                                    aria-label="King Comforter" aria-describedby="kComforterLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qDuvetLabel">Queen Duvet</span>
+                                </div>
+                                <input id="qDuvet" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen Duvet" aria-describedby="qDuvetLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kDuvetLabel">King Duvet</span>
+                                </div>
+                                <input id="kDuvet" type="number" class="form-control" placeholder="King"
+                                    aria-label="King Duvet" aria-describedby="kDuvetLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="tTopperLabel">Twin Topper</span>
+                                </div>
+                                <input id="tTopper" type="number" class="form-control" placeholder="Twin"
+                                    aria-label="Twin Topper" aria-describedby="tTopperLabel">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="fToppereLabel">Full Topper</span>
+                                </div>
+                                <input id="fTopper" type="number" class="form-control" placeholder="Full"
+                                    aria-label="Full Topper" aria-describedby="fTopperLabel">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="qTopperLabel">Queen Topper</span>
+                                </div>
+                                <input id="qTopper" type="number" class="form-control" placeholder="Queen"
+                                    aria-label="Queen Topper" aria-describedby="qTopperLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="kTopperLabel">King Topper</span>
+                                </div>
+                                <input id="kTopper" type="number" class="form-control" placeholder="King"
+                                    aria-label="King Topper" aria-describedby="kTopperLabel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="blanketLabel">Blankets</span>
+                                </div>
+                                <input id="blanket" type="number" class="form-control" placeholder="blanket"
+                                    aria-label="Blankets" aria-describedby="blanketLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <h3>Miscellaneous</h3>
+                </div>
+                <form class="border border-primary rounded bg-success">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="eyeMassLabel">Eye Massager</span>
+                                </div>
+                                <input id="eyeMass" type="number" class="form-control" placeholder="#"
+                                    aria-label="Eye Massager" aria-describedby="eyeMassLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="neckMassLabel">Neck Massager</span>
+                                </div>
+                                <input id="neckMass" type="number" class="form-control" placeholder="#"
+                                    aria-label="Neck Massager" aria-describedby="neckMassLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="carSeatLabel">Car Massager</span>
+                                </div>
+                                <input id="carSeat" type="number" class="form-control" placeholder="#"
+                                    aria-label="Car Massager" aria-describedby="carSeatLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="sDiffLabel">Small Diffuser</span>
+                                </div>
+                                <input id="sDiff" type="number" class="form-control" placeholder="#"
+                                    aria-label="Small Diffuser" aria-describedby="sDiffLabel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="lDiffLabel">Large Diffuser</span>
+                                </div>
+                                <input id="lDiff" type="number" class="form-control" placeholder="#"
+                                    aria-label="Large Diffuser" aria-describedby="lDiffLabel">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
